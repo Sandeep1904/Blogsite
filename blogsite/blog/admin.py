@@ -4,10 +4,12 @@ from .models import Post
 
 class PostAdmin(admin.ModelAdmin):
     list_display = (
+        'id',
         'name',
         'title',
         'blog',
         'date_posted',
     )
+    exclude = ['id']
 
 admin.site.register(Post, PostAdmin)
