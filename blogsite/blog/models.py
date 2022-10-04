@@ -3,7 +3,7 @@ import random
 import string
 from django.utils.crypto import get_random_string
 
-
+#this is a function that returns a random alphanumeric string of length 7.
 def random_id():
    rand_str = get_random_string(7)
    return rand_str
